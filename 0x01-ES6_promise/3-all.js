@@ -11,3 +11,5 @@ export default function handleProfileSignUp() {
     })
     .catch(() => console.log('Signup system offline'));
 }
+// Promise.all() is a method in JavaScript that takes an array
+// (or an iterable) of promises and returns a single promise.
