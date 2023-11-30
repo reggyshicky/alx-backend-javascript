@@ -9,6 +9,8 @@ export default function initializeRooms() {
   instance2._maxStudentsSize = 34;
 
   return [
-    `ClassRoom { _maxStudentsSize: ${instance._maxStudentsSize}}``ClassRoom { _maxStudentsSize: ${instance1._maxStudentsSize}}``ClassRoom { _maxStudentsSize: ${instance2._maxStudentsSize}}`,
+    `ClassRoom { _maxStudentsSize: ${instance._maxStudentsSize}}`,
+    `ClassRoom { _maxStudentsSize: ${instance1._maxStudentsSize}}`,
+    `ClassRoom { _maxStudentsSize: ${instance2._maxStudentsSize}}`,
   ];
 }
