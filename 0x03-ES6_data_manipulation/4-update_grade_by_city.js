@@ -1,3 +1,5 @@
+/* disable eslint
+*/
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const cityStudents = students.filter(
     (student) => student.location === city,
@@ -15,7 +17,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     }
     return {
       ...student,
-      grade: "N/A",
+      grade: 'N/A',
     };
   });
 }
