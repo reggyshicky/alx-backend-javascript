@@ -2,7 +2,7 @@ export const weakMap = new WeakMap();
 /*
 weak array
 */
-export default function queryAPI(endpoint) {
+export const queryAPI = (endpoint) => {
   if (weakMap.has(endpoint)) {
     const endpointdata = weakMap.get(endpoint);
     if (endpointdata >= 4) {
@@ -12,4 +12,4 @@ export default function queryAPI(endpoint) {
   } else {
     weakMap.set(endpoint, 1);
   }
-}
+};
