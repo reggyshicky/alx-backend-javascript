@@ -32,3 +32,8 @@ var StudentClass = /** @class */ (function () {
     };
     return StudentClass;
 }());
+function createStudent(cStudent, firstName, lastName) {
+    return new cStudent(firstName, lastName);
+}
+var student1 = createStudent(StudentClass, 'reggy', 'reeee');
+console.log(student1);
